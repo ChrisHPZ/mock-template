@@ -11,8 +11,10 @@ body, html {
     background-position: center;
     background-attachment: fixed;
     color:white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:16px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     width:100%;
 }
 h1,
@@ -25,6 +27,7 @@ h6 {
     line-height:1;
     margin:0;
     padding:0;
+    letter-spacing: 2px;
 }
 h2 {
     font-size:58px;
@@ -47,7 +50,6 @@ span {
 }
 nav {
     width:100%;
-    background:slategray;
     position:fixed;
     top:0;
     left:0;
@@ -59,7 +61,7 @@ nav ul {
     display:flex;
     justify-content: flex-end;
     align-items: center;
-    gap:20px;
+    background:#383F47;
 }
 nav li a {
     color:white;
@@ -68,13 +70,12 @@ nav li a {
     cursor: pointer;
     padding:20px;
     display:block;
-    background:slategrey;
-    transition:all linear 0.5s;
+    transition:all linear 0.4s;
 }
 nav li a:hover {
     background:white;
     color:slategray;
-    transition:all linear 0.5s;
+    transition:all linear 0.4s;
 }
 #about {
     background:rgba(0,0,0,0.7);
@@ -120,7 +121,7 @@ nav li a:hover {
     display:grid;
     grid-template-areas:"one two"
                         "one three";
-    
+    background:black;    
 }
 .staggered-grid .grid-child-one,
 .staggered-grid .grid-child-two,
@@ -132,15 +133,15 @@ nav li a:hover {
     padding:20px;
 }
 .staggered-grid .grid-child-one {
-    background:red;
+    background:rgba(192,169,188,0.5);
     grid-area: one;
 }
 .staggered-grid .grid-child-two {
-    background:green;
+    background:#9E496D;
     grid-area: two;
 }
 .staggered-grid .grid-child-three {
-    background:blueviolet;
+    background:#30505C;
     grid-area:three;
 }
 @media screen and (max-width:960px) {

@@ -12,5 +12,5 @@ $(document).ready(function(){
     $('html, body').animate({
         scrollTop: $(divID).offset().top - $("nav").outerHeight()
     }, 750);
- });   
+ });
 });
