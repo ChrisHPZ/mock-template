@@ -103,7 +103,8 @@ nav li a:hover {
     padding:20px;
 }
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,
+.contact-form input[type="submit"] {
     margin-bottom:20px;
     padding:15px 20px;
     min-width:400px;
@@ -111,6 +112,23 @@ nav li a:hover {
 .contact-form label {
     font-size:24px;
     margin-bottom:10px;
+}
+::placeholder {
+  color:black;
+  font-weight:bold;
+}
+.contact-form input[type="submit"] {
+  background:#30505C;
+  color:white;  
+  border:none;
+  outline: none;
+  cursor: pointer;
+  transition:all 0.4s linear;
+}
+.contact-form input[type="submit"]:hover {
+  background:white;
+  color:#30505C;
+  transition:all 0.4s linear;
 }
 #footer {
     background:black;
@@ -153,4 +171,25 @@ nav li a:hover {
                             "two three";
         
     }
+}
+@media screen and (max-width:640px) {
+  nav ul {
+    justify-content: center;
+  }
+  #about {
+    padding-top:75px;
+    padding-left:0;
+    padding-right:0;
+    height:unset;
+  }
+  .staggered-grid {
+    grid-template-areas:"one one"
+                        "two two"
+                        "three three";
+  }
+  .contact-form input, 
+  .contact-form textarea, 
+  .contact-form input[type="submit"] {
+    min-width:100%;
+  }
 }
